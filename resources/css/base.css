@@ -1,0 +1,51 @@
+:root {
+    --bulma-primary-h: 0deg;
+    --bulma-primary-s: 0%;
+    --bulma-primary-l: 88%;
+    --bulma-link-h: 226deg;
+    --bulma-link-s: 70%;
+    --bulma-link-l: 55%;
+    --bulma-info-h: 193deg;
+    --bulma-info-s: 98%;
+    --bulma-info-l: 74%;
+    --bulma-success-h: 151deg;
+    --bulma-success-s: 55%;
+    --bulma-success-l: 42%;
+    --bulma-warning-l: 62%;
+    --bulma-danger-h: 358deg;
+    --bulma-danger-s: 75%;
+    --bulma-danger-l: 59%;
+    --bulma-body-size: 0.875em;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-1px);
+    }
+
+    50% {
+        transform: translateX(1px);
+    }
+
+    75% {
+        transform: translateX(-1px);
+    }
+}
+
+.is-danger {
+    animation: shake 0.3s ease-in-out;
+}
+
+.card {
+    --bulma-card-shadow: 0 0.5em 1em -0.125em hsla(0deg, 0%, 25%, 0.1), 0 0px 0 1px hsla(0deg, 0%, 100%, 0.1);
+}
